@@ -2,16 +2,17 @@ let date = 2050
 let stat = 'student'
 let count = 0
 
-if (date) {
+if (date === 2050) {
     console.log("January", 'New Year’s Day')
     console.log("March", 'Human Rights Day')
+
     date = 'April'
     console.log(date, 'Family Day')
     console.log(date, 'Freedom Day')
     count = count + 4
     console.log(date, 'Day of Goodwill')
-        count = count + 1
-    
+    count = count + 1
+
 
     console.log('August', 'Women’s Day')
     console.log('September', 'Heritage Day')
@@ -19,11 +20,11 @@ if (date) {
     console.log(date, 'Day of Reconciliation')
 
     count = count + 3
-    
+
     if (stat === 'parent') {
         console.log('June', 'Youth Day')
-    count = count + 1
-        
+        count = count + 1
+
     }
     else {
         stat = 'parent'
@@ -31,7 +32,7 @@ if (date) {
         count = count + 1
     }
     date = 2050
-    
+
 }
 
 console.log('Your status is:', stat)
