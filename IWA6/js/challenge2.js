@@ -8,13 +8,13 @@ const minuteOfDay = 0;
 
 // Only change below this line
 
- if (hourOfDay == 0 && minuteOfDay == 0) {
+ if (hourOfDay == 0 && minuteOfDay == 0) {  //made sure that i am left with the code only
     
-const taxAsDecimal = parseInt(tax) / 100
-const startingAfterTax = salary * (1 - taxAsDecimal)
-const balance = startingAfterTax - transport - food - rent
+const taxAsDecimal = parseInt(tax) / 100       //parsed tax to an integer and made 100 a string
+const startingAfterTax = salary * (1 - taxAsDecimal)   //added brackets and removed '' to 1
+const balance = startingAfterTax - transport - food - rent    //renamed the starting
     	
-console.log("R", balance.toFixed(2))
+console.log("R", balance.toFixed(2))  //changed 3 to 2 but i did not the required answer
     
  }
 
