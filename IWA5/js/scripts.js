@@ -3,14 +3,22 @@ const BANNED_WARNING = 'Unfortunately we do not ship to your country of residenc
 const NONE_SELECTED = 0
 
 const customers = 1       //Took this statement from the bottom of the code
-let location = 'RSA'    //Took this statement from the bottom of the code
-let currency = 'R'
-let shipping = 400
+let location = 'NAM'    //Took this statement from the bottom of the code
+let currency = undefined
+let shipping = undefined
+
+const shoes = 300 * 1
+const toys = 100 * 5
+const shirts = 150 * NONE_SELECTED
+const batteries = 35 * 2
+const pens = 5 * NONE_SELECTED
+
 //declared the above code using const and let 
 
 
 if (location === 'RSA') {        // added a strict operator and made sure RSA is a string
-    console.log(shipping === 400 && currency === 'R')       
+    shipping = 400  
+    currency = 'R'    
 }
 
 
@@ -19,11 +27,7 @@ if (location === 'NAM') {        //made sure that the if statement is in a corre
     console.log(currency === '$' && shipping === 600)
 }
 
-const shoes = 300 * 1
-const toys = 100 * 5
-const shirts = 150 * NONE_SELECTED
-const batteries = 35 * 2
-const pens = 5 * NONE_SELECTED
+
 
 
 if (shoes + batteries + pens + shirts > 1000) {        //removed the && operator

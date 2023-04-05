@@ -14,7 +14,7 @@ const taxAsDecimal = parseInt(tax) / 100       //parsed tax to an integer and ma
 const startingAfterTax = salary * (1 - taxAsDecimal)   //added brackets and removed '' to 1
 const balance = startingAfterTax - transport - food - rent    //renamed the starting
     	
-console.log("R", balance.toFixed(2))  //changed 3 to 2 but i did not the required answer
+console.log("R", balance.toFixed(2))  //added string "R" and changed 3 to 2 but i did not the required answer
     
  }
 
