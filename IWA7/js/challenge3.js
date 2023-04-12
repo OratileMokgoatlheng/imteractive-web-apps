@@ -13,7 +13,7 @@ const divider = '----------------------------------'
 const owed = `R ${-(parseFloat(leoBalance) + parseFloat(sarahBalance)).toFixed(2)}`
 const leo = `${leoName} ${leoSurname} (Owed: R ${parseFloat(-leoBalance).toFixed(2)})\n`
 const sarah = `${sarahName} ${sarahSurname} (Owed: ${parseFloat(-sarahBalance).toFixed(2)})\n\n`
-const total = `\n  Total amount owed: ${owed}\n`
+const total = `\n Total amount owed: ${owed}\n`
 const result = leo + sarah + divider + total + divider 
 
 console.log(result)

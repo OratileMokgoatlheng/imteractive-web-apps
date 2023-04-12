@@ -39,3 +39,4 @@ const sarah = {
 }
 console.log(leo, leo.address.postalCode)
 console.log(sarah, sarah.address.postalCode)
+console.log(leo)
