@@ -118,11 +118,9 @@ console.log(`${lastDay}/${lastMonth}/${(new Date(2030, 0, 9).getFullYear())}`)
 console.log('')
 
 const randomIndex = Math.floor(Math.random() * Object.keys(holidays).length);
-const randomHoliday = randomIndex.name;
+const randomHoliday = holidays[randomIndex].name;
 
 console.log(randomHoliday)
-
-
 
 
 
