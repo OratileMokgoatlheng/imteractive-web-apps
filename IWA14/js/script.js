@@ -1,20 +1,20 @@
 // script.js
 
-function add (a, b){
+function add (a, b) {             //function declaration introduced
      
 
-     return a + b
+     return a + b      //returned the arguments
     }
 
-function multiply (a, b){
+function multiply (a, b){             //function declaration introduced
      
-     return  a * b
+     return  a * b                //returned the arguments
     }
 
 function internal() {
-	 add = this.add(this.internal.a, this.internal.b)
-	multiply = this.multiply(add, this.internal.c)
-	console.log(multiply) 
+	const added = this.add(this.internal.a, this.internal.b)       //called an internal key from objects
+	const multiplied = this.multiply(added, this.internal.c)         
+	console.log(multiplied)               //logged multiply
 }
 
 // Not allowed to change below this

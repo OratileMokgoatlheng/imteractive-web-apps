@@ -4,16 +4,17 @@ let calculated = '1'
 
 // Only allowed to change below
 
-const logCalc = () => { 
-    const isString = typeof calculated
-    const calculatedAsNumber = isString ? parseInt(calculated) : calculated
-    calculated = calculatedAsNumber +1
+const logCalc = () => {      //introduced arrow function
+    const isString = typeof calculated === 'string'      //removed the string that was unnecessary
+    const calculatedAsNumber = isString ? parseInt(calculated) : calculated   //converted calculated to integer
+    calculated = calculatedAsNumber + 1       //removed strict operator and assigned using equality
 }
 
 
-const calcUser = () => {
-  logCalc()
-  if (calculated > 2){ 
+
+const calcUser = () => {        //arrow function
+  logCalc()              //added parantheses to make it a function
+  if (calculated > 2){    //left with one if statement that re-assigns user and state
    user = 'John'
    state = 'requesting'
 }
@@ -23,7 +24,7 @@ const calcUser = () => {
   }
 }
 
-const checkUser = () => {
+const checkUser = () => {            //arrow  function
 	if (user && state === 'requesting') {
 		console.log(`User: ${user} (${calculated})`)
 	}
