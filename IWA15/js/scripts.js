@@ -9,10 +9,29 @@ const data = {
 }
 
 // Only edit below
-/** */
-const { lists: {0:{ 1: first }}} = data
-const { lists: {1:{ 1: second }}} = data 
-const { lists: {2:{ 1: third }}} = data 
+
+const {
+	lists: {
+		0: {
+			1: first
+		}
+	}
+} = data
+
+const {
+	lists: {
+		1: {
+		    1: second 
+		}
+	 }
+} = data 
+const { 
+	lists: {
+		2:{
+		   1: third 
+		}
+	}
+} = data
 
 // const first = data.lists[0][1]
 // const second = data.lists[1][1]
